@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_illness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/alert_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="输入只为更好的服务~"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="提示：输入你本人的病情及急救方法，可在紧急情况下做出重要提示"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/alertdialog_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/bq_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="病情\n描述 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/bq_edt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/bq_txt"
+                android:background="@drawable/textview_back"
+                android:gravity="top"
+                android:hint="请输入病情"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textSize="19sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="2dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/way_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="救助\n方法 "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/way_edt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/way_txt"
+                android:background="@drawable/textview_back"
+                android:gravity="top"
+                android:hint="请输入"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textSize="19sp" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="如果没有病情，请点击‘取消’"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/alertdialog_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_neg_illness"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="@drawable/alertdialog_left_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/actionsheet_blue"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="43dp"
+                android:background="@color/alertdialog_line" />
+
+            <Button
+                android:id="@+id/btn_pos_illness"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="@drawable/alertdialog_right_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

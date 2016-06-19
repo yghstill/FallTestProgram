@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/android_layout_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_item_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:text="药物："
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/contast_edt_medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/item_margin_right"
+            android:layout_weight="1.8"
+            android:background="@null"
+            android:hint="请输入"
+            android:inputType="text"
+            android:textColor="@color/dimgray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_del_medicine"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/login_delete_data_icon"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_item_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:text="剂量："
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/contast_edt_jiliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/item_margin_right"
+            android:layout_weight="1.8"
+            android:background="@null"
+            android:hint="请输入"
+            android:inputType="text"
+            android:textColor="@color/dimgray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_del_jiliang"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/login_delete_data_icon"
+            android:visibility="invisible" />
+    </LinearLayout>
+    
+     <ListView
+        android:id="@+id/med_time_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="@drawable/android_layout_bg"
+        android:paddingLeft="40dp"
+        android:layout_gravity="center">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/btn_ok2"
+        android:enabled="false"
+        android:text="保 存"
+        android:textColor="@drawable/btn_login_text" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/press_gray" />
+
+    <TextView
+        android:id="@+id/btn_add_med_time"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/setting_item_selector"
+        android:drawableLeft="@drawable/ic_clock_add_alarm"
+        android:gravity="center_vertical"
+         android:paddingLeft="90dp"
+        android:text="添加时间"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+    
+
+</LinearLayout>

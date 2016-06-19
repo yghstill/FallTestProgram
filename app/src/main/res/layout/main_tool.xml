@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/android_layout_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_item_center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/light_btn"
+            style="@style/TxtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_item_selector"
+            android:drawableLeft="@drawable/ic_tool_light"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="16dp"
+            android:text="手电筒"
+            android:textSize="22sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_item_center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bigjing_btn"
+            style="@style/TxtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_item_selector"
+            android:drawableLeft="@drawable/ic_tool_bigjing"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="16dp"
+            android:text="放大镜"
+            android:textSize="22sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_item_center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/math_btn"
+            style="@style/TxtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_item_selector"
+            android:drawableLeft="@drawable/ic_tool_calculator"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="16dp"
+            android:text="计算器"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

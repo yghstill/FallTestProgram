@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">老人安全助手</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="et_version">2.0.1</string>
+    <string name="ablout">本系统由寸草心团队合力开发，主要是对老年人安全进行监护。系统分为老人端和子女端，老人端有吃药提醒、心率监测、行为监测、相册电话簿以及地图等主要功能；子女端可以对老人的状态进行实时查看与监测，在一定程度上，使老人尤其一些独居老人和记忆力不好的老人的安全得到了保障。</string>
+</resources>

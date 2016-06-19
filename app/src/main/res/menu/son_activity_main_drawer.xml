@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_mymsg"
+            android:icon="@drawable/ic_menu_mymsg"
+            android:title="老人信息"
+
+            />
+        <item
+            android:id="@+id/nav_position"
+            android:icon="@drawable/ic_menu_position"
+            android:title="老人足迹" />
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/ic_menu_set"
+            android:title="相关设置" />
+        <item
+            android:id="@+id/nav_health"
+            android:icon="@drawable/ic_menu_health"
+            android:title="健康指数" />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_fankui"
+                android:icon="@drawable/ic_menu_fankui"
+                android:title="反馈" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_aboutus"
+                android:title="关于我们" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="退出系统" />
+        </menu>
+    </item>
+
+</menu>

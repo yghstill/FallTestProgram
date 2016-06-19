@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Old_MainActivity"
+    tools:showIn="@layout/app_bar_main_old">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/card_main_bule2"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="离家距离"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/medicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下次吃药: 晚上8点"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tempture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:textSize="18sp"
+                android:text="25℃"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cloud"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_msg_select"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/msg_button_selector" />
+
+        <ImageView
+            android:id="@+id/btn_tool_select"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/tool_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_map_select"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/map_button_selector" />
+
+        <ImageView
+            android:id="@+id/btn_contast_select"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/contast_button_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_sos_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:src="@drawable/sos_button_selector" />
+    </LinearLayout>
+</LinearLayout>
